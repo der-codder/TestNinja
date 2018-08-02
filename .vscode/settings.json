@@ -1,3 +1,5 @@
 {
-  "dotnet-test-explorer.testProjectPath": "TestNinja.UnitTests"
+  "dotnet-test-explorer.testProjectPath": "TestNinja.UnitTests",
+  "dotnet-test-explorer.autoWatch": true,
+  "dotnet-test-explorer.autoExpandTree": true
 }
