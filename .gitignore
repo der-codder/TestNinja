@@ -237,3 +237,4 @@ _Pvt_Extensions
 .fake/
 
 wwwroot/uploads/
+.vscode/solution-explorer/
