@@ -10,6 +10,24 @@
                 "${workspaceFolder}/TestNinja.UnitTests/TestNinja.UnitTests.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Run tests",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "test"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/TestNinja.UnitTests"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }
