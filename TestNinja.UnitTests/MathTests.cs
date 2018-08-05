@@ -15,6 +15,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        [Ignore("Because I wanted to!")]
         public void Add_WhenCalled_ReturnsTheSumOfArguments()
         {
             var result = _math.Add(1, 2);
@@ -23,27 +24,14 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        public void Max_FirstArgumentIsGreater_ReturnTheFirstArgument()
+        [TestCase(2, 1, 2)]
+        [TestCase(1, 2, 2)]
+        [TestCase(2, 2, 2)]
+        public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expected)
         {
-            var result = _math.Max(2, 1);
+            var result = _math.Max(a, b);
 
-            Assert.That(result, Is.EqualTo(2));
-        }
-
-        [Test]
-        public void Max_SecondArgumentIsGreater_ReturnTheSecondArgument()
-        {
-            var result = _math.Max(1, 2);
-
-            Assert.That(result, Is.EqualTo(2));
-        }
-
-        [Test]
-        public void Max_ArgumentsAreEqual_ReturnTheSameArgument()
-        {
-            var result = _math.Max(2, 2);
-
-            Assert.That(result, Is.EqualTo(2));
+            Assert.That(result, Is.EqualTo(expected));
         }
     }
 }
