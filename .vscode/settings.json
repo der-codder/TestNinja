@@ -4,6 +4,6 @@
     "**/obj": true
   },
   "dotnet-test-explorer.testProjectPath": "TestNinja.UnitTests",
-  "dotnet-test-explorer.autoWatch": true,
+  "dotnet-test-explorer.autoWatch": false,
   "dotnet-test-explorer.autoExpandTree": true
 }
