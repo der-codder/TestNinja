@@ -6,7 +6,7 @@ namespace TestNinja.UnitTests.Mocking
     {
         public string Read(string path)
         {
-            return "<test>";
+            return "";
         }
     }
 }
